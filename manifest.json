@@ -2,15 +2,28 @@
   "manifest_version": 2,
   "name": "RickBrick",
   "version": "1.0",
-  "description": "The exension the blocks those Rick Rolls that never want to give you up",
-  "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-    "storage"
-  ],
+  "description": "RickBrick blocks those extensions that never want to give you up!",
+  "permissions": ["webRequest", "webRequestBlocking", "storage"],
   "background": {
     "scripts": ["background.js"],
-    "persistent": true
+    "persistent": false
   },
-  "manifest_version": 1
+  "browser_action": {
+    "default_icon": {
+      "48": "icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "your_extension_id@domain.com"
+    }
+  },
+  "web_accessible_resources": [
+    "popup.html",
+    "popup.js"
+  ]
 }
