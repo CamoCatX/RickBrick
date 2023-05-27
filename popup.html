@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blocklist Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blocklist Manager</h1>
+
+  <input type="text" id="urlInput" placeholder="Enter URL">
+  <button id="addButton">Add to Blocklist</button>
+
+  <h2>Blocked URLs:</h2>
+  <ul id="blocklist">
+    <!-- URLs will be dynamically added here -->
+  </ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>
