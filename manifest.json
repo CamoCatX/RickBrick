@@ -1,1 +1,16 @@
-
+{
+  "manifest_version": 2,
+  "name": "RickBrick",
+  "version": "1.0",
+  "description": "The exension the blocks those Rick Rolls that never want to give you up",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "manifest_version": 1
+}
