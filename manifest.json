@@ -3,7 +3,7 @@
   "name": "RickBrick",
   "version": "1.0",
   "description": "RickBrick blocks those extensions that never want to give you up!",
-  "permissions": ["webRequest", "webRequestBlocking", "storage"],
+  "permissions": ["webRequest", "webRequestBlocking", "storage", "notifications"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
